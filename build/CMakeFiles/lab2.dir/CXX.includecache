@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/envir.h
+vector
+-
+geom.h
+-
+
+../include/geom.h
+math.h
+-
+iostream
+-
+
+../include/robot.h
+vector
+-
+geom.h
+-
+
+../include/sensor.h
+string
+-
+envir.h
+-
+robot.h
+-
+
+/home/ecn/ecn_arpro/mobile_robot/src/robot.cpp
+iostream
+-
+math.h
+-
+robot.h
+-
+sensor.h
+-
+
